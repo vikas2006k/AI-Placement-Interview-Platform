@@ -255,44 +255,15 @@ Stores administrator account details used to manage the platform, companies, cod
 - One Admin can manage multiple Coding Questions.
 
 
+```mermaid
+erDiagram
 
-
-
-                    +----------------+
-                    |    Student     |
-                    +----------------+
-                           |
-         +-----------------+------------------+
-         |                 |                  |
-         |                 |                  |
-         v                 v                  v
-     +--------+      +-----------+     +--------------+
-     | Resume |      | Interview |     | CodingSubmission |
-     +--------+      +-----------+     +--------------+
-         |                 |                  |
-         v                 v                  |
-+----------------+   +------------------+     |
-| ResumeAnalysis |   | InterviewQuestion|     |
-+----------------+   +------------------+     |
-                                              |
-                                              |
-                                     +------------------+
-                                     | CodingQuestion   |
-                                     +------------------+
-
-         Student
-             |
-             +----------------------+
-             |                      |
-             v                      v
-     +----------------+     +------------------+
-     | LearningRoadmap|     |    SkillGap      |
-     +----------------+     +------------------+
-
-+-------------+
-|   Company   |
-+-------------+
-
-+-------------+
-|    Admin    |
-+-------------+
+    Student ||--o{ Resume : uploads
+    Resume ||--|| ResumeAnalysis : analyzed_by
+    Student ||--o{ Interview : attends
+    Interview ||--o{ InterviewQuestion : contains
+    CodingQuestion ||--o{ CodingSubmission : receives
+    Student ||--o{ CodingSubmission : submits
+    Student ||--o{ LearningRoadmap : has
+    Student ||--o{ SkillGap : has
+```
