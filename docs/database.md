@@ -16,17 +16,17 @@ The database stores information related to:
 ## Database Tables
 
 The platform consists of the following database tables:
-<span style="color: yellow;">1</span> Student
-<span style="color: yellow;">2</span> Resume
-<span style="color: yellow;">3</span> ResumeAnalysis
-<span style="color: yellow;">4</span> Interview
-<span style="color: yellow;">5</span> InterviewQuestion
-<span style="color: yellow;">6</span> CodingQuestion
-<span style="color: yellow;">7</span> CodingSubmission
-<span style="color: yellow;">8</span> Company
-<span style="color: yellow;">9</span> LearningRoadmap
-<span style="color: yellow;">10</span> SkillGap
-<span style="color: yellow;">11</span> Admin
+1. Student
+2. Resume
+3. ResumeAnalysis
+4. Interview
+5. InterviewQuestion
+6. CodingQuestion
+7. CodingSubmission
+8. Company
+9. LearningRoadmap
+10. SkillGap
+11. Admin
 
 ## Student Table
 
